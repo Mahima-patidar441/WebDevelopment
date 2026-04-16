@@ -1,0 +1,60 @@
+.container{
+    width: 600px;
+    height: 600px;
+    background-color: aqua;
+    margin: 100px;
+}
+
+.box{
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+.static{
+    /* static position will not change and it will be set automatically if we don't declare position */
+    position: static;
+    background-color: black;
+}
+
+.rel{
+    /* Relative position can be changed accordingly related to it's parent element (it's values will be changed as per it's parent position; like- container is the parent of box relative) */
+    position: relative;
+    background-color: red;
+    top: 50px;
+    left: -100px;
+    right: 100px;
+    top: 100px;
+    left: 200px;
+}
+
+.abs{
+    /* Absolute position can be changed accordingly related to the main parent .html unless we provide a parent with position relative */
+    background-color: blue;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 3;
+}
+
+/* z-index is used to make the certain box coming front on the view while one is above another it will give the priority on the basis of values like large values will get the first priorrity and come in front */
+
+.fix{
+    /* Fixed position can be changed accordingly related to the main parent .html unless we provide a parent with position relative */
+    
+    /* It is always fixed at a position like when we scroll the whole site will be scrolled but not that it will remain as it is  */
+    background-color: brown;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 2;
+}
+
+.sti{
+    /* It acts same as fixed but it changes according to it's parent and it won't come out of that parent and will get scrolled after that  */
+    background-color: purple;
+    position: sticky;
+    top: 300px;
+    left: 120px;
+
+}

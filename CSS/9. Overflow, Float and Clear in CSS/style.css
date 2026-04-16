@@ -1,0 +1,22 @@
+.container{
+    height: 400px;
+    width: 400px;
+    border: 1px solid blue;
+    text-align: justify;
+
+    /* by visible all the values will be same and all the content will be visible even after the size is matched */
+    /* overflow: visible; */
+
+    /* overflow: hidden; */
+    /* by hidden all the extra content will be removed or gets deleted */
+
+    /* overflow: scroll; */
+    /* by scroll we get a scroll bar on bothh x and y axis */
+
+    overflow: auto;
+    /* auto is used the most and it is recommended */
+
+    /* Float: left, right, none(default), inherit */
+
+    /* Clear: left, right, both, none(default), inherit */
+}

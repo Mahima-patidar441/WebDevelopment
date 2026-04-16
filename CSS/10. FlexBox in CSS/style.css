@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    margin: 10px;
+    height: 400px;
+    border: 2px solid red;
+
+    display: flex;
+    /* flex-direction: row; */
+    /*
+        flex-direction:
+            row: (in a same row)[horizontal] [Default]
+
+            row reverse: (in a same row but the last element will be the first)
+            
+            column: (in a same column)[vertical]
+            
+            column reverse: (in a same column but the last element will be at the top)
+    */
+    /* flex-wrap: wrap; */
+    /*
+        flex-wrap:
+            nowrap: (elements won't fall or change the position when the screen size is decreased) [Default]
+
+            wrap: (elements will fall down when screen size is decreased)
+
+            wrap-reverse: (elements will go on top when screen size is decreased)
+    */
+
+    /* gap: 10px; (for gap on both rows and column) */
+    /* 
+        row-gap: 10px; (for gap in between rows)
+
+        column-gap: 10px; (for gap in between columns)
+    */
+
+    flex-flow: wrap row ;
+    /* flex-flow: (an shortcut for flex-wrap and flex-direction respectively) */
+
+    justify-content: space-around;
+    /* 
+        justify-content: (to justify(align) the content on the horizontal axis of the screen)
+            flex-start: (all the elements will be aligned on the left side of the screen) [Default]
+
+            flex-end: (all the elements will be aligned on the extreme right side of the screen)
+
+            center: (all the elements will be aligned on the center of the screen)
+
+            space-around: (good amount of equal size between all the elements but the space prior to the first element and after the last element is not as same as between the other elements)
+
+            space-evenly: (the amount of space will be same in all: prior the first element, between all elements, and after all elements)
+
+            space-between: (in this we'll not get any space prior to the first element and after the last element)
+    */
+
+    align-items: flex-start;
+    /* 
+        align-items: used for align items on the vertical axis(y-axis)
+            
+            stretch: [Default] will take the same size as the parrent container
+
+            flex-start: elements will be aligned at the top of the screen
+
+            flex-end: elements will be aligned at the bottom of the page
+
+            center: elements will be aligned at the center of the page
+    */
+
+    align-content: center;
+}
+
+#box-1{
+    order: 1;
+    /* flex-grow: 1; will take the extra space between the elements, higher the number higher will be the preference(will grow more as compared to the smaller numbers) */
+
+    /* flex-shrink: 2; will be shrinked the first based on the same preference as discussed above (1 is default value)*/
+
+    flex: 0 0 200px;
+    /* flex: flex-grow flex-shrink flex basis; respectively */
+}
+
+#box-4{
+    order: 4;
+    /* align-self: flex-end; */
+}
+
+.box{
+    border: 2px solid green;
+    /* margin: 10px; */
+    width: 80px;
+    /* flex-basis: 25%; used for making the elements as the exact same size as defined of the screen */
+}

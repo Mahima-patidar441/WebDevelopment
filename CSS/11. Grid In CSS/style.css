@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid red;
+    height: 400px;
+    display: grid; 
+    /* used for multi-dimensional layout  */
+    /* gap: 10px; used for creating gap in between elements */
+    row-gap: 10px; 
+    /* used for creating gap between rows of the elements */
+    column-gap: 6px; 
+    /* used for creating gap between columns of the elements */
+
+    grid-template-columns: repeat(3, 100px); 
+    /* used to decide how many columns will be there in each row and of what size; you can write the values one after one or you can write repeat(no. of columns, space it should take) */
+
+    /* we can have px units but this is static value and won't change and other remaining space will be blank */
+    
+    /* we can have vw(viewwidth) and this will take the described size of the display */
+    
+    /* we can also have fr(fraction) as a unit and this can make the columns of same width dynamically with all the blank space managed; can also use auto it'll work same as fr but you can't set 2times auto or 3 times auto */
+
+    /* grid-template-rows: 200px 250px 300px;  */
+    /* used to decide the size of each row ; you can write the values one after one or you can write repeat(no. of columns, space it should take) */
+
+    /* grid-auto-rows: 120px;  */
+    /* we can specify default row height values to all the remaining rows after the ones we've declared above in grid-template-rows (it'll ignore them and change the size of all other remaining rows) */
+
+    /* justify-content: space-around; */
+    /* 
+        justify-content: (to justify(align) the content on the horizontal axis of the screen)
+            start: (all the elements will be aligned on the left side of the screen) [Default]
+
+            end: (all the elements will be aligned on the extreme right side of the screen)
+
+            center: (all the elements will be aligned on the center of the screen)
+
+            space-around: (good amount of equal size between all the elements but the space prior to the first element and after the last element is not as same as between the other elements)
+
+            space-evenly: (the amount of space will be same in all: prior the first element, between all elements, and after all elements)
+
+            space-between: (in this we'll not get any space prior to the first element and after the last element)
+    */
+
+    /* align-content: start; */
+    /* 
+        align-content: used to align on a veritcal direction
+            stretch: [Default] uses whole height
+            center: make all the elements appear in the center
+            start: elements start from the top
+            end: elements end at the bottom
+    */
+
+}
+
+.box{
+    border: 2px solid green;
+    padding: 12px;
+}
+
+#box-1{
+    background-color: bisque;
+    /* justify-self: center; */
+    /* align the particular box on the horizontal level */
+    /* 
+        start: leftmost
+        end: rightmost
+        center: at the center
+        stretch: [Default] wholespace
+    */
+
+    /* align-self: center; */
+    /* used to align particular box on the vertical lavel */
+    /* 
+        start: topmost [Default]
+        end: bottommost
+        center: in the center
+    */
+
+    /* grid-column-start: 1; */
+    /* used for describing the column from which the colummn should start to expand */
+
+    /* grid-column-end: 4; */
+    /* used to decide when the expanding will end as if you wanna take space of 2 columns then you should write 2+1=3 as a value [n+1 where n is the no of the column space you wanna take] OR you need to write span n */
+
+    /* grid-column: 1 / 3; */
+    /* shortcut of grid-column-start and grid-column-end written in start/end format respectively */
+
+    /* grid-row-start: 1; */
+    /* used for describing the row from which the row should start to expand */
+
+    /* grid-row-end: 4; */
+    /* used to decide when the expanding will end as if you wanna take space of 2 rows then you should write 2+1=3 as a value [n+1 where n is the no of the row space you wanna take] OR you need to write span n */
+
+    /* grid-row: 1 / 3; */
+    /* shortcut of grid-row-start and grid-row-end written in start/end format respectively */
+
+    grid-area: 1 / 1 / 4 / 3;
+    /* used for the shortcut of grid-row and grid-column  */
+    /* defined as: row-start / column-start / row-end / column-end */
+}

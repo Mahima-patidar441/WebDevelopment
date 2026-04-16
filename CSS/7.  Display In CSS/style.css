@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid blue;
+}
+
+p{
+    width: 50%;
+    height: 50%;
+}
+
+span{
+    width: 50%;
+    height: 50%;
+}
+
+a{
+    width: 50%;
+    height: 50%;
+    /* Since it is an inline tag the width height won't change until we change the display from inline to something else */
+    display: inline-block;
+}

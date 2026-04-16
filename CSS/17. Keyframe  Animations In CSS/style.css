@@ -1,0 +1,39 @@
+.outer-container{
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+}
+
+.inner-container{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    transform: translate(50%, 50%);
+    
+}
+
+.inner-container:hover{
+    animation-name: Shift;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes Shift {
+    0%{
+        transform: translate(50%, 50%) rotate(0deg);
+    }
+    25%{
+        transform: translate(50%, 50%) rotate(90deg);
+    }
+    50%{
+        transform: translate(50%, 50%) rotate(180deg);
+    }
+    75%{
+        transform: translate(50%, 50%) rotate(270deg);
+    }
+    100%{
+        transform: translate(50%, 50%) rotate(360deg);
+    }
+}

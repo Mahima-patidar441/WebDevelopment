@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables In CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hello Trekker's!!</h1>
+        <div class="box">
+            <h2>Mountains</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto dolorum minus aut, sit iusto quaerat aliquid beatae nulla laboriosam error ab perferendis odio maiores, a similique deleniti esse nihil?
+            </p> 
+        </div>
+
+        <div class="box">
+            <h2>Beaches</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto dolorum minus aut, sit iusto quaerat aliquid beatae nulla laboriosam error ab perferendis odio maiores, a similique deleniti esse nihil?
+            </p> 
+        </div>
+
+        <div class="box">
+            <h2>Waterfalls</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. In architecto dolorum minus aut, sit iusto quaerat aliquid beatae nulla laboriosam error ab perferendis odio maiores, a similique deleniti esse nihil?
+            </p> 
+
+            <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+        </div>
+    </div>
+</body>
+</html>
+
+
+<!-- Variables are used to reduce the size of codes and reuse the same piece of code again and again wherever we need -->
+<!--
+    the syntax of variable in CSS is :- 
+        1. for declaring: [--variable-name: property]
+        ex- [--backg-color: red] 
+        #Note- if name is of more than 1 word then it should be separated by an (-) between it
+
+        2. for calling: [var(--variable-name);]
+        ex- [background-color: var(--backg-color);]
+        #Note- calling should be done within the same class or parent it is declared in like- if it is declared in class box then if we call it outside the class box then it won't work.
+-->

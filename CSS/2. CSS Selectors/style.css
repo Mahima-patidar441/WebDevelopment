@@ -1,0 +1,48 @@
+/* 
+Selector Syntax:
+SelectorTYpe {
+    propertyKey: propertyValue;
+}
+*/
+
+/* 1. Element Selector:
+p{
+    color: red;
+}
+*/
+
+/* 2. ID Selector:
+#pId{
+    color: red;
+}
+*/
+
+/* 3. Class Selector: recommended to be used the most  
+.p{
+    color: red;
+    background-color: black;
+}
+*/
+
+/*4. Nested Selector
+#pId, .p{
+
+}
+*/
+
+/* 5. Universal Selector: 
+*{
+    color: red;
+}
+*/
+
+/* 6. Descendant Selector: */
+#Descendant p{
+    color: red;
+}
+
+
+/*7. Direct Child Selector: */
+#Direct > p{
+    color: red;
+}

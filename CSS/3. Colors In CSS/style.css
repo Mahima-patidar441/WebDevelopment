@@ -1,0 +1,6 @@
+body{
+    color: rgb(red, green, blue);
+    color: rgba(red, green, blue, alpha);
+    color: hsl(hue, saturation, lightness);
+    color: hsla(hue, saturation, lightness, alpha);
+}

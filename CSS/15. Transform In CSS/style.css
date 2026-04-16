@@ -1,0 +1,109 @@
+.outer-container{
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+    margin: 100px auto;
+}
+
+.inner-container{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    color: yellow;
+    display: flex;
+    justify-content: center; /* for shifting content on x-axis*/
+    align-items: center; /* for shifting content on y-axis*/
+}
+
+/* Scale Property- used to stretch or compress the element */
+.inner-container{
+    /* for both horizontal and vertical */
+    transform: scale(0.5); 
+    /* [1 is the default value] we can either increase it or deccrease it to change the scaling property */
+
+    /* for horizontal only */
+    /* transform: scaleX(2);  */
+    /* [1 is the default value] we can either increase it or deccrease it to change the scaling property */
+
+    /* for Vertical only */
+    /* transform: scaleY(2);  */
+    /* [1 is the default value] we can either increase it or deccrease it to change the scaling property */
+
+    /* shortcuts to define horizontal and vertical scale both */
+    /* transform: scaleX(2) scaleY(2); */
+    /* transform: scale(2, 2); */
+
+    /* #Note- we can change the scaale property with respect to z axis too with same syntax as above [scaleZ(value)]*/
+}
+
+/* Skew Property- used to change angle arrangement */
+.inner-container{
+    /* for both horizontal and vertical */
+    transform: skew(50deg); 
+    /* [0 is the default value] we can either increase it or deccrease it to change the skew property */
+
+    /* for horizontal only */
+    /* transform: skewX(50deg);  */
+    /* [0 is the default value] we can either increase it or deccrease it to change the skew property */
+
+    /* for Vertical only */
+    /* transform: skewY(50deg);  */
+    /* [0 is the default value] we can either increase it or deccrease it to change the skew property */
+
+    /* shortcuts to define horizontal and vertical skew both */
+    /* transform: skewX(50deg) skewY(50deg); */
+    /* transform: skew(50deg, 50deg); */
+
+    /* #Note- we can change the skew property with respect to z axis too with same syntax as above [skewZ(value)]*/
+}
+
+/* Translate Property- used to shift element */
+.inner-container{
+    /* for both horizontal and vertical */
+    transform: translate(50%); 
+    /* [0 is the default value] we can either increase it or deccrease it to change the translate property */
+
+    /* for horizontal only */
+    /* transform: translateX(50%);  */
+    /* [0 is the default value] we can either increase it or deccrease it to change the translate property */
+
+    /* for Vertical only */
+    /* transform: translateY(50%);  */
+    /* [0 is the default value] we can either increase it or deccrease it to change the translate property */
+
+    /* shortcuts to define horizontal and vertical skew both */
+    /* transform: translateX(50%) translateY(50%); */
+    /* transform: translate(50%, 50%); */
+
+}
+
+/* Rotate Property- usedd to rotate element */
+.inner-container{
+    /* for all directions */
+    transform: rotate(50deg); 
+    /* [0 is the default value] we can either increase it or decrease it to change the rotate property */
+
+    /* for horizontal only */
+    /* transform: rotateX(50deg);  */
+    /* [0 is the default value] we can either increase it or deccrease it to change the rotate property */
+
+    /* for Vertical only */
+    /* transform: rotateY(50deg);  */
+    /* [0 is the default value] we can either increase it or deccrease it to change the rotate property */
+
+    /* shortcuts to define horizontal and vertical skew both */
+    /* transform: rotateX(50deg) rotateY(50deg); */
+    /* transform: rotate(50deg, 50deg, 50deg); */
+
+    /* #Note- we can change the rotate property with respect to z axis too with same syntax as above [rotateZ(value)]*/
+}
+
+/* To apply all properties in one go */
+.inner-container{
+    /* transform: rotate(45deg) scale(1.3) skew(30deg) translate(50%); */
+
+    /* to change origin */
+    transform-origin: top left;
+    transform-origin: 40% 30%;
+    transform: rotate(50deg);
+}

@@ -1,0 +1,32 @@
+body{
+    background-color: aqua;
+}
+
+/* @media queries is used to make the site organizable and adjustable in all the screens */
+/* @media (width <= 500px){
+    body{
+        background-color: red;
+    }
+} */
+/* above media query type changes the background colour of the site if the width of fthe page is less than or equal to 500px  */
+
+/* @media (orientation: portrait){
+    body{
+        background-color: red;
+    }
+} */
+/* 
+    above media query type changes the background colour or the properties of the site if the page is in portrait mode(height is larger than the width)
+    we can also set this to landscape that if the page is in landscape mode then the color or properties will be changed accordingly 
+*/
+
+/* we can apply as many conditions as we want using and or logical operations  */
+@media (min-width: 500px) and (max-width: 600px){
+    body{
+        background-color: red;
+    }
+}
+/* 
+    min-width: greater than or equal to 
+    max-width: less than or equal to
+*/

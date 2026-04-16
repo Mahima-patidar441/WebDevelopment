@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+h1{
+    color: red;
+    background-color: black;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: blue;
+    text-shadow: 3px 5px 5px blue; /* (horizontal vertical blurr color) */
+    font-family: "Caveat", cursive;
+    /* font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal; */
+}
+
+p{
+    text-align: justify;/* (makes it aligned in same line for both ends) */
+    text-indent: 80px;/* (Gives space before start of each para) */
+    /* letter-spacing: 0.05rem;(Gives space between each letter) */
+    /* line-height: 1.2rem; (Gives space between lines) */
+    /* word-spacing: 1px; (Gives space between words) */
+    text-shadow: 3px 5px blue;
+    color: transparent;/* (if we want to only show the shadow) */
+}
