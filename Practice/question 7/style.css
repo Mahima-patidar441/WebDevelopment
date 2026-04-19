@@ -1,0 +1,10 @@
+.content{
+    color: white;
+    padding: 1rem;
+
+}
+.newClass{
+    background-color: green;
+    font-style: italic;
+    font-size: 2rem;
+}
